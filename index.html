@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./imagenes/logo.png" alt="">
+        <h1>Juego del ahorcado</h1>
+    </header>
+    <main>
+        <section class="ahorcado">
+            <canvas id="canvas"  width="230px" height="300px" ></canvas>
+            <div id="contenido" class="contenido"></div>
+            <div id="erroneo" class="erroneo"></div>
+            <div class="botones">
+                <button id="nuevoJuego" class="btn btn-azul">Nuevo Juego</button>
+                <button id="desistir" class="btn btn-transparente">Desistir</button>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

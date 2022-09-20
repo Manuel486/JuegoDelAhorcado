@@ -1,0 +1,145 @@
+:root{
+    --texto: #F56E56;
+    --borde-boton: #F56E56;
+    --fondo-boton: black;
+    --texto-boton: white;
+    --fondo-resultado: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    background-image: url(./imagenes/fondo.png);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 180px;
+    height: 120px;
+}
+
+header h1{
+    font-size: 5rem;
+}
+
+main{
+    width: 100%;
+    height: 78%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.btn{
+    width: 31rem;
+    height: 7rem;
+    border-radius: 24px;
+    margin: 1rem;
+    border-color: var(--borde-boton);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.9rem;
+    
+}
+
+.btn:active{
+    transform: translateY(4px);
+}
+
+.btn:hover{
+    background-color: #F2F2F2;
+    border-color: var(--borde-boton);
+    color: black;
+}
+
+.btn-transparente{
+    color: var(--borde-boton);
+    background-color: var(--fondo-boton);
+    border-color: black;
+}
+
+.btn-azul{
+    color: var(--fondo-boton);
+    background-color: var(--borde-boton);
+    border-color: var(--borde-boton);
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ahorcado{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.erroneo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color{
+    font-size: 6rem;
+    color: var(--texto);
+    margin: 0.8rem;
+    border-bottom: 5px solid var(--texto);
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+}
+
+.incorrecto{
+    font-size: 4rem;
+    color: black;
+    margin-top: 1rem;
+}
+
+.correcto{
+    color: black;
+}
+
+.swal2-popup {
+    font-size: 1.5rem !important; 
+}
+
+@media (max-width: 550px) {
+    .swal2-popup {
+        width: 70% !important;
+    }
+    
+}
+
